@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <servlet>
+    <description></description>
+    <display-name>CourseList</display-name>
+    <servlet-name>CourseList</servlet-name>
+    <servlet-class>com.Course.servlets.CourseList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CourseList</servlet-name>
+    <url-pattern>/CourseList</url-pattern>
+  </servlet-mapping>
+  <display-name>CourseCrud</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>CourseAdd</display-name>
+    <servlet-name>CourseAdd</servlet-name>
+    <servlet-class>com.Course.servlets.CourseAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CourseAdd</servlet-name>
+    <url-pattern>/CourseAdd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CourseUpdate</display-name>
+    <servlet-name>CourseUpdate</servlet-name>
+    <servlet-class>com.Course.servlets.CourseUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CourseUpdate</servlet-name>
+    <url-pattern>/CourseUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CourseDelete</display-name>
+    <servlet-name>CourseDelete</servlet-name>
+    <servlet-class>com.Course.servlets.CourseDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CourseDelete</servlet-name>
+    <url-pattern>/CourseDelete</url-pattern>
+  </servlet-mapping>
+<servlet-mapping>
+    <servlet-name>home</servlet-name>
+    <url-pattern>/home</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>home</servlet-name>
+    <jsp-file>/WEB-INF/index.jsp</jsp-file>
+</servlet>
+</web-app>
